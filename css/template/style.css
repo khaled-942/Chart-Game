@@ -1,0 +1,66 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 1.3em;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.col-xs-12 {
+  width: 100%;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.col-xs-12 {
+  width: 100%;
+}
+
+.hide {
+  display: none !important;
+}
+
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive,
+.thumbnail a>img,
+.thumbnail>img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.rowStyle {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.item {
+  height: 100%;
+}
+
+#myCarousel {
+  height: 100%;
+}
+
+.newStyle {
+  width: 100% !important;
+  text-align: center !important;
+}

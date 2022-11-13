@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>Educational RC</title>
+
+  <!-- global CSS Starts -->
+  <link rel="stylesheet" href="css/lib/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <link rel="stylesheet" href="css/template/style.css" type="text/css" />
+  <!-- global CSS End -->
+
+  <!-- global JS Starts -->
+  <script src="js/lib/popper.min.js"></script>
+  <script src="js/lib/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/lib/bootstrap.min.js"></script>
+  <script src="js/lib/underscore-min.js"></script>
+
+  <!-- global JS End -->
+
+
+</head>
+
+<body>
+
+  <div id="container">
+    <div class="page_content">
+
+      <div class="container-fluid noPadding">
+        <!-- header start -->
+        <div class="col-xs-12 noPadding header">
+          <div class="box1 title" data-audioSrc="" onClick="fnTitleAudioClick(this)">
+            <img src="assets/images/audio_icon.png" class="img-responsive" /></div>
+          <div class="boxhead5 headingTitle">
+            <h1><span class="Quicksand-Bold Title-Number">Plot Data</span></h1>
+          </div>
+
+          <div class="box1">
+            <div class="resourseBtn hide">
+              <img src="assets/images/resourse_icon.png" class="img-responsive" />
+            </div>
+          </div>
+
+          <div class="box1 pull-right helpBtn hide">
+            <img src="assets/images/help_icon.png" class="img-responsive" />
+          </div>
+        </div>
+        <audio id="audioPlayer1" preload="auto" src=""></audio>
+        <audio id="audioPlayer2" preload="auto" src=""></audio>
+        <!-- header end -->
+
+        <!-- page start -->
+        <section class="col-xs-12 pageContainer">
+
+          <div class="pageBg col-xs-12"></div>
+          <div class="pageContent col-xs-12">
+
+            <div id="myCarousel" class="carousel slide template4_v1" data-ride="carousel" data-interval="0"
+              data-wrap="false" data-id="template4_v1">
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active" data-audioSrc="">
+                  <div class="row rowStyle">
+                    <div class="col-4">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">
+                              Column A
+                            </th>
+                            <th scope="col">
+                              Column B
+                            </th>
+                            <th scope="col">
+                              Column C
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                              <input type="text" id="graph1" class="form-control newStyle"
+                                oninput="updateCol1(this, 0)">
+                            </th>
+                            <td>
+                              <input type="text" id="graph2" class="form-control newStyle"
+                                oninput="updateCol2(this, 0)">
+                            </td>
+                            <td>
+                              <input type="text" id="graph3" class="form-control newStyle"
+                                oninput="updateCol3(this, 0)">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <input type="text" id="graph1" class="form-control newStyle"
+                                oninput="updateCol1(this, 1)">
+                            </th>
+                            <td>
+                              <input type="text" id="graph2" class="form-control newStyle"
+                                oninput="updateCol2(this, 1)">
+                            </td>
+                            <td>
+                              <input type="text" id="graph3" class="form-control newStyle"
+                                oninput="updateCol3(this, 1)">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <input type="text" id="graph1" class="form-control newStyle"
+                                oninput="updateCol1(this, 2)">
+                            </th>
+                            <td>
+                              <input type="text" id="graph2" class="form-control newStyle"
+                                oninput="updateCol2(this, 2)">
+                            </td>
+                            <td>
+                              <input type="text" id="graph3" class="form-control newStyle"
+                                oninput="updateCol3(this, 2)">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <input type="text" id="graph1" class="form-control newStyle"
+                                oninput="updateCol1(this, 3)">
+                            </th>
+                            <td>
+                              <input type="text" id="graph2" class="form-control newStyle"
+                                oninput="updateCol2(this, 3)">
+                            </td>
+                            <td>
+                              <input type="text" id="graph3" class="form-control newStyle"
+                                oninput="updateCol3(this, 3)">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <input type="text" id="graph1" class="form-control newStyle"
+                                oninput="updateCol1(this, 4)">
+                            </th>
+                            <td>
+                              <input type="text" id="graph2" class="form-control newStyle"
+                                oninput="updateCol2(this, 4)">
+                            </td>
+                            <td>
+                              <input type="text" id="graph3" class="form-control newStyle"
+                                oninput="updateCol3(this, 4)">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <input type="text" id="graph1" class="form-control newStyle"
+                                oninput="updateCol1(this, 5)">
+                            </th>
+                            <td>
+                              <input type="text" id="graph2" class="form-control newStyle"
+                                oninput="updateCol2(this, 5)">
+                            </td>
+                            <td>
+                              <input type="text" id="graph3" class="form-control newStyle"
+                                oninput="updateCol3(this, 5)">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <input type="text" id="graph1" class="form-control newStyle"
+                                oninput="updateCol1(this, 6)">
+                            </th>
+                            <td>
+                              <input type="text" id="graph2" class="form-control newStyle"
+                                oninput="updateCol2(this, 6)">
+                            </td>
+                            <td>
+                              <input type="text" id="graph3" class="form-control newStyle"
+                                oninput="updateCol3(this, 6)">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <input type="text" id="graph1" class="form-control newStyle"
+                                oninput="updateCol1(this, 7)">
+                            </th>
+                            <td>
+                              <input type="text" id="graph2" class="form-control newStyle"
+                                oninput="updateCol2(this, 7)">
+                            </td>
+                            <td>
+                              <input type="text" id="graph3" class="form-control newStyle"
+                                oninput="updateCol3(this, 7)">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-8">
+                      <div class="wrapper">
+                        <canvas id="myChart" width="776" height="388"></canvas>
+                      </div>
+                      <span class="yAxisName"></span>
+                      <span class="xAxisName"></span>
+                      <div class="axisWrapper">
+                        <div class="labAxis">Column C</div>
+                        <div class="dt1Axis">Column A</div>
+                        <div class="dt2Axis">Column B</div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- page end -->
+
+        <!-- footer start -->
+        <div class="row" style="margin: 0;">
+          <div class="col-xs-12 footer">
+            <div class="box1" title="Restart" id="restart" onclick="handelReset()">
+              <div class="reloadBtnAll">
+                <img src="assets/images/replay_icon.png" class="img-responsive" />
+              </div>
+            </div>
+
+            <div style="visibility: hidden;" class="box3">
+              <div class="audioPlayerContainer" id="audioDragContainer">
+                <div class="col-xs-12 controlsDiv">
+                  <div class="controlsinline">
+                    <div id="pButton" class="col-xs-1 noPadding">
+                      <img src="assets/images/play.png" class="img-responsive playImg"
+                        onClick="fnStartAudio('play');" />
+                      <img src="assets/images/pause.png" class="img-responsive pauseImg"
+                        onClick="fnStartAudio('pause');" />
+                    </div>
+                    <div class="col-xs-11" id="audioDrag">
+                      <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="0" class="slider" id="myRange" step="0.1">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box1">
+
+              <div class="reloadBtnScreen">
+                <img src="assets/images/reload_icon.png" class="img-responsive" />
+              </div>
+            </div>
+
+            <div class="box2">
+              <!-- <div class="showAnsBtn hide">
+                <img src="assets/images/showAns_icon.png" class="img-responsive" />
+              </div> -->
+              <div class="selectdiv">
+                <select name="cars" id="cars" class="select_Item" onchange="changeChart(this)">
+                  <option value="0">[select graph type]</option>
+                  <option value="pie">Circle Graph</option>
+                  <option value="bar">Bar Graph</option>
+                  <option value="hBar">Horizontal Bar Graph</option>
+                  <option value="multi">Double Bar Graph</option>
+                  <option value="line">Line Graph</option>
+                  <option value="scatter">Scatter Plot</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="box1">
+              <div class="backBtn">
+                <img src="assets/images/back_icon.png" class="img-responsive" />
+              </div>
+            </div>
+
+            <div class="box4">
+              <div class="pageNumber">1 of 2</div>
+            </div>
+
+            <div class="box1">
+              <!-- <div class="nextBtn">
+                <img src="assets/images/next_icon.png" class="img-responsive inlineblock" />
+              </div> -->
+              <div class="showOption">
+                <img src="assets/images/resourse_icon.png" class="img-responsive inlineblock" />
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- footer end -->
+
+
+        <div class="optionPopup">
+          <div class="option_row">
+            <img class="close_option_div" src="assets/images/close_icon.png">
+            <div class="row header_row">
+              <div class="col-xs-12" style="text-align: center;">
+                <span>Bar Graph</span>
+              </div>
+            </div>
+            <div class="row" style="flex-direction: column; align-items: center;">
+              <div class="col-xs-12 data_radio">
+                <label class="name1"> Data:</label>
+                <span>
+                  <input type="radio" id="col1" name="data" value="col1" onchange="choiceData(1)">
+                  <label for="col1">Column A</label>
+                </span>
+                <span>
+                  <input type="radio" id="col2" name="data" value="col2" onchange="choiceData(2)">
+                  <label for="col2">Column B</label>
+                </span>
+                <span>
+                  <input type="radio" id="col3" name="data" value="col3" onchange="choiceData(3)">
+                  <label for="col3">Column C</label>
+                </span>
+              </div>
+              <div class="col-xs-12 data_radio_multi">
+                <label class="name3"> Data-2 :</label>
+                <span>
+                  <input type="radio" id="col111" name="data2" value="col111" onchange="choiceDataMulti(1)">
+                  <label for="col111">Column A</label>
+                </span>
+                <span>
+                  <input type="radio" id="col222" name="data2" value="col222" onchange="choiceDataMulti(2)">
+                  <label for="col222">Column B</label>
+                </span>
+                <span>
+                  <input type="radio" id="col333" name="data2" value="col333" onchange="choiceDataMulti(3)">
+                  <label for="col333">Column C</label>
+                </span>
+              </div>
+              <div class="col-xs-12 label_radio">
+                <label class="name2"> Labels :</label>
+                <span>
+                  <input type="radio" id="col11" name="label" value="col11" onchange="choiceLabels(1)">
+                  <label for="col11">Column A</label>
+                </span>
+                <span>
+                  <input type="radio" id="col22" name="label" value="col22" onchange="choiceLabels(2)">
+                  <label for="col22">Column B</label>
+                </span>
+                <span>
+                  <input type="radio" id="col33" name="label" value="col33" onchange="choiceLabels(3)">
+                  <label for="col33">Column C</label>
+                </span>
+              </div>
+              <div class="col-xs-12 buttons_div">
+                <button class="ok_button" disabled onclick="handelOk()">OK</button>
+                <button class="cancel_button">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="resoursePopup" style="display: none;">
+          <div class="resourseContainer">
+            <img class="closeBtn" src="assets/images/close_icon.png">
+            <div class="col-xs-12 noPadding" style="overflow: auto;width:100%;height:100%;padding:0;">
+              <!-- <img src="assets/images/dummy.jpg" /> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="helpPopup" style="display: none;">
+          <div class="helpContainer">
+            <img class="closeBtn" src="assets/images/close_icon.png">
+            <div class="col-xs-12" style="overflow: auto;width:100%;height:100%;font-size:30px;">
+              <p>Help content goes here.</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(function () {
+      fnSetPlayer();
+      fnTemplate4_v1($('div.active'));
+    });
+  </script>
+  <script type="text/javascript" src="js/template/chart.min.js"></script>
+  <script type="text/javascript" src="js/template/p15_ex11.js"></script>
+  <script type="text/javascript" src="js/template/myChart.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
